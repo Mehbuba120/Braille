@@ -1,0 +1,177 @@
+{% extends 'main.html' %}
+
+{% block title %}About{% endblock %}
+
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About_Us</title>   
+    <link rel="stylesheet"  href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> 
+     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@200&family=Lato:ital,wght@1,300&family=Merienda:wght@400;700&family=Poppins:wght@400;500;600&family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+     <link rel="stylesheet" href="static/css/style.css" type="text/css">
+     <style>
+      h2 {
+            text-align: center;
+            color: black;
+            font-size: 60px;
+            margin-bottom: 0;
+            margin-top: 0;
+        }
+    
+        ol {
+          color: black;
+          text-align: left;
+        }
+    
+        .notes {
+          color: black;
+          text-align: left;
+        }
+    
+      a {
+        color: black;
+        text-decoration: none;
+      }
+    
+      a:hover {
+        color: blue;
+        transition: 0.3s;
+            /* transition: color 12s, font-size 12s; */
+            
+      }
+    
+      .text {
+        color: DodgerBlue;
+      }
+    
+    
+      img {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width: 50%;
+      }
+    
+      .instructions {
+        margin: auto;
+        width: 75%;
+        border: 3px solid blue;
+        padding: 10px;
+        text-align: center;
+      }
+      .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+      }
+    
+      .numbers {
+        font-size: 20px;
+        color: RoyalBlue;
+      }
+    
+      h3 {
+        text-align: left;
+      }
+    
+      .notes {
+        text-align:left;
+      }
+    
+    </style>
+</head>
+<body class="bg">
+  <div class="my-5 px-4">
+    <h2 class="fw-bold h-font text-center">About Us</h2>
+    <div class="h-line bg-dark" ></div>
+    <p class="text-center mt-5">
+    The main objective of this project is to bring awareness of Braille and 
+    to bridge the gap of communication between blind and non-blind people
+    </p>
+  </div>
+
+  <div class="container my-5">
+    <div class="row justify-content-between align-items-center">
+      <div class="col-lg-6 col-md-5 mb-4 order-lg-1 order-md-1 order-2">
+        <h3 class="mb-3 ">Foundation</h3>
+        <p>
+        Based on personal experience, we felt that there weren't enough technology out there to help non-blind people interact and communicate with blind people. So, we decided 
+        to create a braille-to-text converter that is able to take an image of a line (a word, sentence, or a character) of Braille, recognize it, and output its English counterpart. Using data acquired from rare book collections and the internet, 
+         we constructed our own dataset consisting of multiple sets of the Braille alphabet, numbers, and symbols. We then trained an AI that will recognize images of individual Braille characters and translate them into English characters. Using a specific ratio 
+         and cropping function, we are able to take an image of a sentence/line of Braille and segment each Braille character out individually. We feed each of these characters into 
+         our model and then concatenate the output characters together into an English sentence or word.
+    </p>
+      </div>
+      <div class="col-lg-5 col-md-5 mb-4 order-lg-2 order-md-1 order-1">
+        <img src=".\image\istockphoto-1286898421-612x612.jpg" alt="Owner" class="w-100">
+      </div>
+    </div>
+  </div>
+
+  <div class="container mt-5">
+    <div class="row justify-content-between align-items-center">
+      <div class="col-lg-6 col-md-5 mb-4 order-lg-2 order-md-1 order-2">
+        <h3 class="mb-3 ">Principle</h3>
+        <p>
+
+        To do Justice and behave Ethically with our Customers, Partners, Insiders and the Communities
+        </p>
+        <h3 class="mb-3 ">Vision</h3>
+        <p>
+        To help elevate the lifestyle and living of people in general with our Innovations, Creations and Business Practices
+        </p>
+        <h3 class="mb-3 ">Mission</h3>
+        <p>
+          
+        To stay contemporary and contextual being innovative and cutting-edge
+        </p>
+      </div>
+      <div class="col-lg-5 col-md-5 mb-4 order-lg-1 order-md-1 order-1">
+        <img src="./image/about_us.png" alt="Owner" class="w-100">
+      </div>
+    </div>
+  </div>
+
+  <div class="container mt-5 ">
+    <div class="row justify-content-between align-items-center">
+      <div class="col-lg-3 col-md-6 mb-4 px-4">
+        <div class="bg-white rounded shadow p-4 border-top border-4 text-center box">
+          <img src="./image/download.jpg" width=200px height=150px>
+          <h4 class="mt-3">abc</h4>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-4 px-4">
+        <div class="bg-white rounded shadow p-4 border-top border-4 text-center box">
+          <img src="./image/customer.jpg" width=200px height=150px>
+          <h4 class="mt-3">abc</h4>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-4 px-4">
+        <div class="bg-white rounded shadow p-4 border-top border-4 text-center box">
+          <img src="./image/staff.png" width=200px height=150px>
+          <h4 class="mt-3">abc</h4>
+        </div>
+       
+    </div>
+  </div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+<script src="https://kit.fontawesome.com/31a20b87d9.js" crossorigin="anonymous"></script>
+</body>
+</html>
+{% endblock %}

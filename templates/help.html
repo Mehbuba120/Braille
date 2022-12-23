@@ -1,0 +1,153 @@
+{% extends 'main.html' %}
+
+{% block title %}Help{% endblock %}
+
+{% block content %}
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+	<link rel="icon" type="image/png" href="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Emojione_1F441.svg/2000px-Emojione_1F441.svg.png">
+	<title>Tutorial</title>
+    <link rel="stylesheet"  href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> 
+     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@200&family=Lato:ital,wght@1,300&family=Merienda:wght@400;700&family=Poppins:wght@400;500;600&family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+	 <link rel="stylesheet" href="style.css" type="text/css">
+
+<style>
+	h2 {
+        text-align: center;
+        color: black;
+        font-size: 60px;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+
+    ol {
+    	color: black;
+    	text-align: left;
+    }
+
+    .notes {
+    	color: black;
+    	text-align: left;
+    }
+
+	a {
+		color: black;
+		text-decoration: none;
+	}
+
+	a:hover {
+		color: blue;
+		transition: 0.3s;
+        /* transition: color 12s, font-size 12s; */
+        
+	}
+
+	.text {
+		color: DodgerBlue;
+	}
+
+
+	img {
+    	display: block;
+    	margin-left: auto;
+    	margin-right: auto;
+    	width: 50%;
+	}
+
+	.instructions {
+		margin: auto;
+		width: 75%;
+		border: 3px solid blue;
+		padding: 10px;
+		text-align: center;
+	}
+	.center {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 50%;
+	}
+
+	.numbers {
+		font-size: 20px;
+		color: RoyalBlue;
+	}
+
+	h3 {
+		text-align: left;
+	}
+
+	.notes {
+		text-align:left;
+	}
+
+</style>
+</head>
+<body class="bg-light">
+    <br>
+	<h2 class="fw-bold h-font text-center">Tutorial</h2>
+		</br>
+<!-- <p>This page is a tutorial that shows you how to use our Braille-to-text converter.</p> -->
+
+	<div class="instructions">
+		<ol>
+			<li class="numbers">Choose a picture of Braille that you would like to translate into English</li></br>
+			<table class="image1">
+			<caption align="bottom">A sample picture of Braille taken from a library book</caption>
+			<tr><td><img src=".\image\br3.png" alt="A picture of Braille" class="center"></td></tr>
+			</table>
+			
+			</br><li class="numbers">Crop your image</li></br>
+			<table class="image2">
+			<caption align="bottom">A sample picture of good cropping</caption>
+			<tr><td><img src="..." alt="A cropped image of a line of Braille" class="center"></td></tr>
+			</table>
+			<p>Our braille-to-text converter uses a ratio to segment and translate each character, so it is essential that you comply with the following cropping instructions in order to get a good translation. Crop your image so that there is about as much padding as the image above (refer to the blue outline showing the padding you should leave). The size of the padding should be about 1/3 the amount of space between two Braille characters.</p>
+
+			</br><li class="numbers">Go to the 'Home' page and upload your image by clicking 'Choose File' or judt drag & drop your image</li></br>
+			<table class="image3">
+			<caption align="bottom">Choosing a file to upload</caption>
+			<tr><td><img src="..." alt="Uploading an image" class="center" border="3"></td></tr>
+			</table>
+
+			</br><li class="numbers">Click on the 'Scan' button and you should see the translation!</li></br>
+			<table class="image4">
+			<caption align="bottom">Submitting and getting an output</caption>
+			<tr><td><img src="..." alt="Submitting the image" class="center" border="3"></td></tr>
+			</table>
+		</ol>
+
+	<!-- <div class="notes"> -->
+		</br><h3>NOTE:</h3>
+		<ul>
+			<li class="notes">Our Braille-to-text-converter only translates English Grade 1 Braille</li>
+			<li class="notes">So far we can only translate one line of Braille at a time. If you would like to translate multiple lines of Braille, please upload each line separately.</li>
+			<li class="notes">We trained our model only on embossed Braille so pictures of handwritten Braille might not translate well</li>
+			<li class="notes">Characters that our model can recognize:</li>
+            <br>
+			<table class="image5">
+			<caption align="bottom">Our braille-to-text converter can translate the alphabet . . .</caption>
+			<tr><td><img src="..." alt="Chart of all the Braille characters our model can recognize" class="center"></td></tr>
+			</table>
+		</ul>
+	</div>
+    <br>
+<br>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+<script src="https://kit.fontawesome.com/31a20b87d9.js" crossorigin="anonymous"></script>
+</body>
+</html>
+{% endblock %}
